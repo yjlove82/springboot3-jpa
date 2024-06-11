@@ -7,7 +7,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.yjlove82" level="debug" additive="false">
+    <logger name="git.yjlove82" level="debug" additivity="false">
         <appender-ref ref="console"/>
     </logger>
 

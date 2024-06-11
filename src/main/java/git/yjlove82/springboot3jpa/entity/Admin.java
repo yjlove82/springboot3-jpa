@@ -7,13 +7,19 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.time.Instant;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "admin")
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Admin {
 
     @Id
@@ -36,7 +42,7 @@ public class Admin {
     @Column(name = "email", nullable = false, length = 32)
     private String email;
 
-    @Column(name = "date", nullable = false)
+    @Column(name = "date")
     private Instant date;
 
 }
